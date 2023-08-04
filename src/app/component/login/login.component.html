@@ -10,19 +10,21 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email </label>
-                                <input type="email" class="form-control" name="email">
+                                <input type="email" class="form-control" name="email" [(ngModel)]="email">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password">
+                                <input type="password" class="form-control" name="password" [(ngModel)]="password">
                             </div>
 
-                            <button type="button" class="btn btn-info">Login</button>
+                            <button type="button" class="btn btn-info" (click)="login()">Login</button>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href=""> Pasdde compte , <span>Inscrivez vous</span></a>
+                                    <a href="/register" style="text-decoration: none;"> Pas de compte , <span>Inscrivez vous</span></a>
                                 </div>
-                                <div class="col-md-6"></div>
+                                <div class="col-md-6">
+                                    <a class="text-dark" style="text-decoration: none;"> Mot de passe oublié</a>
+                                </div>
                             </div>
                         </form>
                     </div>

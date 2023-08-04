@@ -11,7 +11,7 @@ export const environment = {
     authDomain: 'angular-train-b3599.firebaseapp.com',
     messagingSenderId: '927454868122',
   },
-  production: false
+  production: true
 };
 
 /*

@@ -6,22 +6,26 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { RegisterComponent } from './component/register/register.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { AngularFireModule } from '@angular/fire/compat'
 import { environment } from '../environments/environment';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
