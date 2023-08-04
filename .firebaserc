@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-train-b3599": {
+      "hosting": {
+        "firebase-app": [
+          "angular-train-b3599"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-train-b3599"
+  }
+}
