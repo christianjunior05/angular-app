@@ -20,11 +20,22 @@
                             <button type="button" class="btn btn-info" (click)="login()">Login</button>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="/register" style="text-decoration: none;"> Pas de compte , <span>Inscrivez vous</span></a>
+                                    <a href="/register" style="text-decoration: none;"> Pas de compte , <span>Inscrivez
+                                            vous</span></a>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="/forgot-password" class="text-dark" style="text-decoration: none;"> Mot de passe oublié</a>
                                 </div>
+                            </div>
+                            <div class="row-mt-5">
+                                <a (click)="signInWithGoogle()" style="text-decoration: none;">
+                                    <div class="card shadow text-center">
+                                        <div class="card-body">
+                                            <img src="../../../assets/icon-google.png" height="24px" width="24px"
+                                                alt="icon-google">Se connecter avec google
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </form>
                     </div>
