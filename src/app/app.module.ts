@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
+import { FileuploadComponent } from './component/fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VerifyEmailComponent } from './component/verify-email/verify-email.comp
     DashboardComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
